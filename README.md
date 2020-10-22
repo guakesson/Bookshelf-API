@@ -60,7 +60,7 @@ Respons
 ```
 
 ## List all authors for a specific book
-GET /book/authors/{id}.json
+GET /book/authors/{bookId}.json
 ```bash
 curl -X GET http://localhost:8000/book/authors/3.json
 ```
@@ -130,6 +130,26 @@ Respons
         "id": "4",
         "name": "J.R.R. Tolkien",
         "biography": "J.R.R. Tolkien was born on 3rd January 1892. After serving in the First World War, he became best known for The Hobbit and The Lord of the Rings, selling 150 million copies in more than 40 languages worldwide. Awarded the CBE and an honorary Doctorate of Letters from Oxford University, he died in 1973 at the age of 81."
+    }
+]
+```
+
+##  List all books for a specific author
+
+GET /author/books/{authorId}.json
+```bash
+curl -X GET http://localhost:8000/author/books/9.json
+```
+Respons
+```json
+[
+    {
+        "book_id": "14",
+        "book_isbn": "9781847493729",
+        "book_title": "The Picture of Dorian Gray",
+        "author_id": "9",
+        "author_name": "Oscar Wilde",
+        "author_biography": "Oscar Fingal O'Flahertie Wills Wilde was an Irish poet and playwright. After writing in different forms throughout the 1880s, he became one of London's most popular playwrights in the early 1890s. He is best remembered for his epigrams and plays, his novel The Picture of Dorian Gray, and the circumstances of his criminal conviction for \"gross indecency\", imprisonment, and early death at age 46."
     }
 ]
 ```
