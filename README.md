@@ -68,11 +68,9 @@ Respons
 ```json
 [
     {
-        "book_id": "3",
-        "author_id": "1",
-        "author_name": "J.K. Rowling",
-        "author_biography": "Joanne Rowling, better known by her pen name J. K. Rowling, is a British novelist, screenwriter, producer, and philanthropist. She is best known for writing the Harry Potter fantasy series, which has won multiple awards and sold more than 500 million copies, becoming the best-selling book series in history. The Harry Potter books have also been the basis for the popular film series of the same name, over which Rowling had overall approval on the scripts and was a producer on the final films. She has also written under the pen name Robert Galbraith.",
-        "book_title": "Fantastic Beasts and Where to Find Them"
+        "id": "1",
+        "name": "J.K. Rowling",
+        "biography": "Joanne Rowling, better known by her pen name J. K. Rowling, is a British novelist, screenwriter, producer, and philanthropist. She is best known for writing the Harry Potter fantasy series, which has won multiple awards and sold more than 500 million copies, becoming the best-selling book series in history. The Harry Potter books have also been the basis for the popular film series of the same name, over which Rowling had overall approval on the scripts and was a producer on the final films. She has also written under the pen name Robert Galbraith."
     }
 ]
 ```
@@ -165,12 +163,10 @@ Respons
 ```json
 [
     {
-        "book_id": "14",
-        "book_isbn": "9781847493729",
-        "book_title": "The Picture of Dorian Gray",
-        "author_id": "9",
-        "author_name": "Oscar Wilde",
-        "author_biography": "Oscar Fingal O'Flahertie Wills Wilde was an Irish poet and playwright. After writing in different forms throughout the 1880s, he became one of London's most popular playwrights in the early 1890s. He is best remembered for his epigrams and plays, his novel The Picture of Dorian Gray, and the circumstances of his criminal conviction for \"gross indecency\", imprisonment, and early death at age 46."
+        "id": "14",
+        "isbn": "9781847493729",
+        "title": "The Picture of Dorian Gray",
+        "description": "Written in his distinctively dazzling manner, Oscar Wilde\u2019s story of a fashionable young man who sells his soul for eternal youth and beauty is the author\u2019s most popular work. The tale of Dorian Gray\u2019s moral disintegration caused a scandal when it \ufb01rst appeared in 1890, but though Wilde was attacked for the novel\u2019s corrupting in\ufb02uence, he responded that there is, in fact, \u201ca terrible moral in Dorian Gray.\u201d Just a few years later, the book and the aesthetic/moral dilemma it presented became issues in the trials occasioned by Wilde\u2019s homosexual liaisons, which resulted in his imprisonment. Of Dorian Gray\u2019s relationship to autobiography, Wilde noted in a letter, \u201cBasil Hallward is what I think I am: Lord Henry what the world thinks me: Dorian what I would like to be\u2014in other ages, perhaps.\u201d"
     }
 ]
 ```
