@@ -1,4 +1,14 @@
-# Odd-Hill-API
+# Bookshelf API
+
+## Getting started
+
+Make sure you have composer and PHP 7.2.5 or higher installed to run this application on your computer.
+
+```bash
+composer install
+
+bin/console server:run
+```
 
 ## List all books
 GET /books.json
