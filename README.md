@@ -77,6 +77,27 @@ Respons
 ]
 ```
 
+## List all genres for a specific book
+
+GET /book/genres/{bookId}.json
+```bash
+curl -X GET http://localhost:8000/book/genres/3.json
+```
+Respons
+```json
+[
+    {
+        "genre": "Young Adult"
+    },
+    {
+        "genre": "Fantasy"
+    },
+    {
+        "genre": "Fiction"
+    }
+]
+```
+
 ## List all authors
 
 GET /authors.json
@@ -153,3 +174,43 @@ Respons
     }
 ]
 ```
+
+## List all genres
+
+
+GET /genres.json
+```bash
+curl -X GET http://localhost:8000/genres.json
+```
+
+Respons
+```json
+[
+    {
+        "id": "1",
+        "name": "Young Adult"
+    },
+]
+```
+
+## Search for genres by name
+
+GET /genres.json?q=query
+```bash
+curl -X GET http://localhost:8000/genres.json?q=fiction
+```
+
+Respons
+```json
+[
+    {
+        "id": "3",
+        "name": "Science Fiction"
+    },
+    {
+        "id": "4",
+        "name": "Fiction"
+    }
+]
+```
+
