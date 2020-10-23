@@ -1,0 +1,75 @@
+<?php
+namespace App\Entity;
+
+use JMS\Serializer\Annotation as JML;
+use Doctrine\ORM\Mapping as ORM;
+
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="authors_books")
+ * @ORM\HasLifecycleCallbacks
+ */
+class AuthorBook
+{
+    
+    /**
+     * @ORM\Id
+     * @ORM\Column(type="integer")
+     * @JML\Groups({"produkter","activities"})
+     * @ORM\GeneratedValue(strategy="AUTO")
+     */
+    protected $id;
+
+    /**
+     * @var \App\Entity\Author
+     *
+     * @JML\Groups({"produkter"})
+     * @ORM\ManyToOne(targetEntity="App\Entity\Author")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="author_id", referencedColumnName="id", onDelete="CASCADE")
+     * })
+     */
+    protected $author;
+
+    /**
+     * @var \App\Entity\Book
+     *
+     * @JML\Groups({"produkter"})
+     * @ORM\ManyToOne(targetEntity="App\Entity\Book")
+     * @ORM\JoinColumns({
+     *   @ORM\JoinColumn(name="book_id", referencedColumnName="id", onDelete="CASCADE")
+     * })
+     */
+    protected $book;
+
+    public function __construct()
+    {
+        
+    }
+
+    
+    public function getId() {
+        return $this->id;
+    }
+
+    public function setAuthor(\App\Entity\Author $author) {
+        $this->author = $author;
+        return $this;
+    }
+    public function getAuthor() {
+        return $this->author;
+    }
+
+    public function setBook(\App\Entity\Book $book) {
+        $this->book = $book;
+        return $this;
+    }
+    public function getBook() {
+        return $this->book;
+    }
+    
+
+
+
+    
+}
