@@ -10,6 +10,12 @@ composer install
 bin/console server:run
 ```
 
+Set up your database connection in the .env file.
+
+```bash
+DATABASE_URL=mysql://username:password@127.0.0.1:3306/db_name
+```
+
 ## List all books
 GET /books.json
 ```bash
